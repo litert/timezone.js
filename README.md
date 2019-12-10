@@ -37,7 +37,7 @@ console.log(TZ.findCanonicalList()); // Find out list of all canonical timezone.
 
 console.log(TZ.offsetToString(480)); // Convert minute offset into string, which should be +08:00.
 
-console.log(TZ.offsetToString('-08:00')); // Convert a string into minute offset, which should be -08:00.
+console.log(TZ.offsetFromString('-08:00')); // Convert a string into minute offset, which should be -480.
 ```
 
 ## Documents
