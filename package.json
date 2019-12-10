@@ -1,0 +1,37 @@
+{
+  "name": "@litert/timezone",
+  "version": "0.1.0",
+  "description": "The timezone support library of LiteRT.",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepare": "npm run rebuild",
+    "build": "echo Using TypeScript && tsc -v && tsc -p .",
+    "build-watch": "echo Using TypeScript && tsc -v && tsc -w -p .",
+    "rebuild": "npm run clean && npm run lint && npm run build",
+    "test": "echo See directory src/samples",
+    "clean": "rm -rf lib samples",
+    "lint": "tslint -p . -c tslint.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litert/timezone.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/litert/timezone.js/issues"
+  },
+  "homepage": "https://github.com/litert/timezone.js#readme",
+  "keywords": [
+    "litert",
+    "lrt",
+    "date",
+    "time",
+    "timezone"
+  ],
+  "author": "Angus.Fenying <fenying@litert.org> (https://fenying.net)",
+  "license": "Apache-2.0",
+  "typings": "lib/index.d.ts",
+  "types": "lib/index.d.ts",
+  "devDependencies": {
+    "typescript": "^3.2.2"
+  }
+}
