@@ -65,6 +65,16 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": false,
         "aliasOf": "Africa/Nairobi"
     },
+    "africa/asmera": {
+        "name": "Africa/Asmera",
+        "description": "",
+        "location": null,
+        "offset": 180,
+        "dstOffset": 180,
+        "deprecated": true,
+        "canonical": false,
+        "aliasOf": "Africa/Nairobi"
+    },
     "africa/bamako": {
         "name": "Africa/Bamako",
         "description": "",
@@ -150,7 +160,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "description": "",
         "location": "MA",
         "offset": 60,
-        "dstOffset": 60,
+        "dstOffset": 0,
         "deprecated": false,
         "canonical": true,
         "aliasOf": null
@@ -160,7 +170,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "description": "Ceuta, Melilla",
         "location": "ES",
         "offset": 60,
-        "dstOffset": 60,
+        "dstOffset": 120,
         "deprecated": false,
         "canonical": true,
         "aliasOf": null
@@ -219,8 +229,8 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "name": "Africa/El_Aaiun",
         "description": "",
         "location": "EH",
-        "offset": 0,
-        "dstOffset": 60,
+        "offset": 60,
+        "dstOffset": 0,
         "deprecated": false,
         "canonical": true,
         "aliasOf": null
@@ -317,7 +327,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "africa/lagos": {
         "name": "Africa/Lagos",
-        "description": "",
+        "description": "West Africa Time",
         "location": "NG",
         "offset": 60,
         "dstOffset": 60,
@@ -387,7 +397,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "africa/maputo": {
         "name": "Africa/Maputo",
-        "description": "",
+        "description": "Central Africa Time",
         "location": "MZ",
         "offset": 120,
         "dstOffset": 120,
@@ -502,8 +512,8 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "offset": 0,
         "dstOffset": 0,
         "deprecated": false,
-        "canonical": false,
-        "aliasOf": "Africa/Lagos"
+        "canonical": true,
+        "aliasOf": null
     },
     "africa/timbuktu": {
         "name": "Africa/Timbuktu",
@@ -511,7 +521,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 0,
         "dstOffset": 0,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Africa/Abidjan"
     },
@@ -621,7 +631,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -180,
         "dstOffset": -180,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Argentina/Catamarca"
     },
@@ -707,7 +717,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "america/argentina/tucuman": {
         "name": "America/Argentina/Tucuman",
-        "description": "Tucuman (TM)",
+        "description": "Tucumán (TM)",
         "location": "AR",
         "offset": -180,
         "dstOffset": -180,
@@ -761,7 +771,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -600,
         "dstOffset": -540,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Adak"
     },
@@ -777,7 +787,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "america/bahia_banderas": {
         "name": "America/Bahia_Banderas",
-        "description": "Central Time - Bahia de Banderas",
+        "description": "Central Time - Bahía de Banderas",
         "location": "MX",
         "offset": -360,
         "dstOffset": -300,
@@ -797,7 +807,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "america/belem": {
         "name": "America/Belem",
-        "description": "Para (east); Amapa",
+        "description": "Pará (east); Amapá",
         "location": "BR",
         "offset": -180,
         "dstOffset": -180,
@@ -861,7 +871,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -180,
         "dstOffset": -180,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Argentina/Buenos_Aires"
     },
@@ -880,7 +890,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "description": "Mato Grosso do Sul",
         "location": "BR",
         "offset": -240,
-        "dstOffset": -180,
+        "dstOffset": -240,
         "deprecated": false,
         "canonical": true,
         "aliasOf": null
@@ -911,7 +921,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -180,
         "dstOffset": -180,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Argentina/Catamarca"
     },
@@ -961,7 +971,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -300,
         "dstOffset": -300,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Atikokan"
     },
@@ -971,7 +981,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -180,
         "dstOffset": -180,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Argentina/Cordoba"
     },
@@ -1000,7 +1010,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "description": "Mato Grosso",
         "location": "BR",
         "offset": -240,
-        "dstOffset": -180,
+        "dstOffset": -240,
         "deprecated": false,
         "canonical": true,
         "aliasOf": null
@@ -1027,9 +1037,9 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "america/dawson": {
         "name": "America/Dawson",
-        "description": "Pacific - Yukon (north)",
+        "description": "MST - Yukon (west)",
         "location": "CA",
-        "offset": -480,
+        "offset": -420,
         "dstOffset": -420,
         "deprecated": false,
         "canonical": true,
@@ -1111,7 +1121,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -480,
         "dstOffset": -420,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Tijuana"
     },
@@ -1131,7 +1141,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -300,
         "dstOffset": -240,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Indiana/Indianapolis"
     },
@@ -1157,13 +1167,13 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "america/godthab": {
         "name": "America/Godthab",
-        "description": "Greenland (most areas)",
-        "location": "GL",
+        "description": "",
+        "location": null,
         "offset": -180,
         "dstOffset": -120,
-        "deprecated": false,
-        "canonical": true,
-        "aliasOf": null
+        "deprecated": true,
+        "canonical": false,
+        "aliasOf": "America/Nuuk"
     },
     "america/goose_bay": {
         "name": "America/Goose_Bay",
@@ -1351,7 +1361,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -300,
         "dstOffset": -240,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Indiana/Indianapolis"
     },
@@ -1391,7 +1401,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -180,
         "dstOffset": -180,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Argentina/Jujuy"
     },
@@ -1431,7 +1441,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -360,
         "dstOffset": -300,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Indiana/Knox"
     },
@@ -1481,7 +1491,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -300,
         "dstOffset": -240,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Kentucky/Louisville"
     },
@@ -1547,7 +1557,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "america/matamoros": {
         "name": "America/Matamoros",
-        "description": "Central Time US - Coahuila, Nuevo Leon, Tamaulipas (US border)",
+        "description": "Central Time US - Coahuila, Nuevo León, Tamaulipas (US border)",
         "location": "MX",
         "offset": -360,
         "dstOffset": -300,
@@ -1571,7 +1581,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -180,
         "dstOffset": -180,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Argentina/Mendoza"
     },
@@ -1587,7 +1597,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "america/merida": {
         "name": "America/Merida",
-        "description": "Central Time - Campeche, Yucatan",
+        "description": "Central Time - Campeche, Yucatán",
         "location": "MX",
         "offset": -360,
         "dstOffset": -300,
@@ -1637,7 +1647,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "america/monterrey": {
         "name": "America/Monterrey",
-        "description": "Central Time - Durango; Coahuila, Nuevo Leon, Tamaulipas (most areas)",
+        "description": "Central Time - Durango; Coahuila, Nuevo León, Tamaulipas (most areas)",
         "location": "MX",
         "offset": -360,
         "dstOffset": -300,
@@ -1661,7 +1671,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -300,
         "dstOffset": -240,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Toronto"
     },
@@ -1697,7 +1707,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "america/nipigon": {
         "name": "America/Nipigon",
-        "description": "Eastern - ON, QC (no DST 1967−73)",
+        "description": "Eastern - ON, QC (no DST 1967-73)",
         "location": "CA",
         "offset": -300,
         "dstOffset": -240,
@@ -1755,6 +1765,16 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": true,
         "aliasOf": null
     },
+    "america/nuuk": {
+        "name": "America/Nuuk",
+        "description": "Greenland (most areas)",
+        "location": "GL",
+        "offset": -180,
+        "dstOffset": -120,
+        "deprecated": false,
+        "canonical": true,
+        "aliasOf": null
+    },
     "america/ojinaga": {
         "name": "America/Ojinaga",
         "description": "Mountain Time US - Chihuahua (US border)",
@@ -1805,21 +1825,21 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": true,
         "aliasOf": null
     },
-    "america/port_of_spain": {
-        "name": "America/Port_of_Spain",
-        "description": "",
-        "location": "TT",
-        "offset": -240,
-        "dstOffset": -240,
-        "deprecated": false,
-        "canonical": true,
-        "aliasOf": null
-    },
     "america/port-au-prince": {
         "name": "America/Port-au-Prince",
         "description": "",
         "location": "HT",
         "offset": -300,
+        "dstOffset": -240,
+        "deprecated": false,
+        "canonical": true,
+        "aliasOf": null
+    },
+    "america/port_of_spain": {
+        "name": "America/Port_of_Spain",
+        "description": "",
+        "location": "TT",
+        "offset": -240,
         "dstOffset": -240,
         "deprecated": false,
         "canonical": true,
@@ -1831,13 +1851,13 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -300,
         "dstOffset": -300,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Rio_Branco"
     },
     "america/porto_velho": {
         "name": "America/Porto_Velho",
-        "description": "Rondonia",
+        "description": "Rondônia",
         "location": "BR",
         "offset": -240,
         "dstOffset": -240,
@@ -1931,7 +1951,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -180,
         "dstOffset": -180,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Argentina/Cordoba"
     },
@@ -1941,13 +1961,13 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -480,
         "dstOffset": -420,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Tijuana"
     },
     "america/santarem": {
         "name": "America/Santarem",
-        "description": "Para (west)",
+        "description": "Pará (west)",
         "location": "BR",
         "offset": -180,
         "dstOffset": -180,
@@ -2001,7 +2021,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -420,
         "dstOffset": -360,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Denver"
     },
@@ -2161,15 +2181,15 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -240,
         "dstOffset": -240,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Port_of_Spain"
     },
     "america/whitehorse": {
         "name": "America/Whitehorse",
-        "description": "Pacific - Yukon (south)",
+        "description": "MST - Yukon (east)",
         "location": "CA",
-        "offset": -480,
+        "offset": -420,
         "dstOffset": -420,
         "deprecated": false,
         "canonical": true,
@@ -2239,7 +2259,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "name": "Antarctica/Macquarie",
         "description": "Macquarie Island",
         "location": "AU",
-        "offset": 660,
+        "offset": 600,
         "dstOffset": 660,
         "deprecated": false,
         "canonical": true,
@@ -2291,7 +2311,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 720,
         "dstOffset": 780,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Pacific/Auckland"
     },
@@ -2377,7 +2397,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "asia/aqtau": {
         "name": "Asia/Aqtau",
-        "description": "Mangghystau/Mankistau",
+        "description": "Mangghystaū/Mankistau",
         "location": "KZ",
         "offset": 300,
         "dstOffset": 300,
@@ -2387,7 +2407,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "asia/aqtobe": {
         "name": "Asia/Aqtobe",
-        "description": "Aqtobe/Aktobe",
+        "description": "Aqtöbe/Aktobe",
         "location": "KZ",
         "offset": 300,
         "dstOffset": 300,
@@ -2411,13 +2431,13 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 300,
         "dstOffset": 300,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Ashgabat"
     },
     "asia/atyrau": {
         "name": "Asia/Atyrau",
-        "description": "Atyrau/Atirau/Gur'yev",
+        "description": "Atyraū/Atirau/Gur'yev",
         "location": "KZ",
         "offset": 300,
         "dstOffset": 300,
@@ -2457,7 +2477,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "asia/bangkok": {
         "name": "Asia/Bangkok",
-        "description": "",
+        "description": "Indochina (most areas)",
         "location": "TH",
         "offset": 420,
         "dstOffset": 420,
@@ -2511,7 +2531,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 330,
         "dstOffset": 330,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Kolkata"
     },
@@ -2527,7 +2547,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "asia/choibalsan": {
         "name": "Asia/Choibalsan",
-        "description": "Dornod, Sukhbaatar",
+        "description": "Dornod, Sükhbaatar",
         "location": "MN",
         "offset": 480,
         "dstOffset": 480,
@@ -2541,7 +2561,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 480,
         "dstOffset": 480,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Shanghai"
     },
@@ -2551,7 +2571,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 480,
         "dstOffset": 480,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Shanghai"
     },
@@ -2571,7 +2591,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 360,
         "dstOffset": 360,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Dhaka"
     },
@@ -2630,7 +2650,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "description": "Northern Cyprus",
         "location": "CY",
         "offset": 120,
-        "dstOffset": 120,
+        "dstOffset": 180,
         "deprecated": false,
         "canonical": true,
         "aliasOf": null
@@ -2651,7 +2671,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 480,
         "dstOffset": 480,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Shanghai"
     },
@@ -2667,7 +2687,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "asia/ho_chi_minh": {
         "name": "Asia/Ho_Chi_Minh",
-        "description": "",
+        "description": "Vietnam (south)",
         "location": "VN",
         "offset": 420,
         "dstOffset": 420,
@@ -2687,7 +2707,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "asia/hovd": {
         "name": "Asia/Hovd",
-        "description": "Bayan-Olgiy, Govi-Altai, Hovd, Uvs, Zavkhan",
+        "description": "Bayan-Ölgii, Govi-Altai, Hovd, Uvs, Zavkhan",
         "location": "MN",
         "offset": 420,
         "dstOffset": 420,
@@ -2708,7 +2728,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     "asia/istanbul": {
         "name": "Asia/Istanbul",
         "description": "",
-        "location": null,
+        "location": "TR",
         "offset": 180,
         "dstOffset": 180,
         "deprecated": false,
@@ -2781,7 +2801,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 360,
         "dstOffset": 360,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Urumqi[note 1]"
     },
@@ -2801,7 +2821,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 345,
         "dstOffset": 345,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Kathmandu"
     },
@@ -2871,7 +2891,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 480,
         "dstOffset": 480,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Macau"
     },
@@ -2924,6 +2944,16 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "deprecated": false,
         "canonical": false,
         "aliasOf": "Asia/Dubai"
+    },
+    "asia/nicosia": {
+        "name": "Asia/Nicosia",
+        "description": "Cyprus (most areas)",
+        "location": "CY",
+        "offset": 120,
+        "dstOffset": 180,
+        "deprecated": false,
+        "canonical": true,
+        "aliasOf": null
     },
     "asia/novokuznetsk": {
         "name": "Asia/Novokuznetsk",
@@ -3005,6 +3035,16 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": true,
         "aliasOf": null
     },
+    "asia/qostanay": {
+        "name": "Asia/Qostanay",
+        "description": "Qostanay/Kostanay/Kustanay",
+        "location": "KZ",
+        "offset": 360,
+        "dstOffset": 360,
+        "deprecated": false,
+        "canonical": true,
+        "aliasOf": null
+    },
     "asia/qyzylorda": {
         "name": "Asia/Qyzylorda",
         "description": "Qyzylorda/Kyzylorda/Kzyl-Orda",
@@ -3018,10 +3058,10 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     "asia/rangoon": {
         "name": "Asia/Rangoon",
         "description": "",
-        "location": "MM",
+        "location": null,
         "offset": 390,
         "dstOffset": 390,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Yangon"
     },
@@ -3041,7 +3081,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 420,
         "dstOffset": 420,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Ho_Chi_Minh"
     },
@@ -3151,7 +3191,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 120,
         "dstOffset": 180,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Jerusalem"
     },
@@ -3161,7 +3201,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 360,
         "dstOffset": 360,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Thimphu"
     },
@@ -3201,7 +3241,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 480,
         "dstOffset": 480,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Makassar"
     },
@@ -3221,7 +3261,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 480,
         "dstOffset": 480,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Asia/Ulaanbaatar"
     },
@@ -3351,7 +3391,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 0,
         "dstOffset": 60,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Atlantic/Faroe"
     },
@@ -3371,7 +3411,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 60,
         "dstOffset": 120,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Europe/Oslo"
     },
@@ -3471,7 +3511,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 600,
         "dstOffset": 660,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Australia/Sydney"
     },
@@ -3651,7 +3691,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 570,
         "dstOffset": 630,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Australia/Broken_Hill"
     },
@@ -3680,7 +3720,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "description": "",
         "location": null,
         "offset": -180,
-        "dstOffset": -120,
+        "dstOffset": -180,
         "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Sao_Paulo"
@@ -3769,7 +3809,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "name": "Canada/Yukon",
         "description": "",
         "location": null,
-        "offset": -480,
+        "offset": -420,
         "dstOffset": -420,
         "deprecated": true,
         "canonical": false,
@@ -3849,8 +3889,8 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "name": "Eire",
         "description": "",
         "location": null,
-        "offset": 0,
-        "dstOffset": 60,
+        "offset": 60,
+        "dstOffset": 0,
         "deprecated": true,
         "canonical": false,
         "aliasOf": "Europe/Dublin"
@@ -4015,16 +4055,6 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": true,
         "aliasOf": null
     },
-    "etc/gmt0": {
-        "name": "Etc/GMT0",
-        "description": "",
-        "location": null,
-        "offset": 0,
-        "dstOffset": 0,
-        "deprecated": false,
-        "canonical": false,
-        "aliasOf": "Etc/GMT"
-    },
     "etc/gmt-0": {
         "name": "Etc/GMT-0",
         "description": "",
@@ -4175,6 +4205,16 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": true,
         "aliasOf": null
     },
+    "etc/gmt0": {
+        "name": "Etc/GMT0",
+        "description": "",
+        "location": null,
+        "offset": 0,
+        "dstOffset": 0,
+        "deprecated": false,
+        "canonical": false,
+        "aliasOf": "Etc/GMT"
+    },
     "etc/greenwich": {
         "name": "Etc/Greenwich",
         "description": "",
@@ -4193,7 +4233,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "dstOffset": 0,
         "deprecated": true,
         "canonical": false,
-        "aliasOf": null
+        "aliasOf": "Etc/UTC"
     },
     "etc/universal": {
         "name": "Etc/Universal",
@@ -4271,7 +4311,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 0,
         "dstOffset": 60,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Europe/London"
     },
@@ -4337,7 +4377,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "europe/busingen": {
         "name": "Europe/Busingen",
-        "description": "Büsingen am Hochrhein",
+        "description": "Busingen",
         "location": "DE",
         "offset": 60,
         "dstOffset": 120,
@@ -4369,8 +4409,8 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "name": "Europe/Dublin",
         "description": "",
         "location": "IE",
-        "offset": 0,
-        "dstOffset": 60,
+        "offset": 60,
+        "dstOffset": 0,
         "deprecated": false,
         "canonical": true,
         "aliasOf": null
@@ -4437,7 +4477,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "europe/kaliningrad": {
         "name": "Europe/Kaliningrad",
-        "description": "MSK−01 - Kaliningrad",
+        "description": "MSK-01 - Kaliningrad",
         "location": "RU",
         "offset": 120,
         "dstOffset": 120,
@@ -4565,15 +4605,15 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": true,
         "aliasOf": null
     },
-    "asia/nicosia": {
-        "name": "Asia/Nicosia",
-        "description": "Cyprus (most areas)",
+    "europe/nicosia": {
+        "name": "Europe/Nicosia",
+        "description": "",
         "location": "CY",
         "offset": 120,
         "dstOffset": 180,
         "deprecated": false,
-        "canonical": true,
-        "aliasOf": null
+        "canonical": false,
+        "aliasOf": "Asia/Nicosia"
     },
     "europe/oslo": {
         "name": "Europe/Oslo",
@@ -4741,7 +4781,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 120,
         "dstOffset": 180,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Europe/Chisinau"
     },
@@ -4757,7 +4797,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "europe/uzhgorod": {
         "name": "Europe/Uzhgorod",
-        "description": "Ruthenia",
+        "description": "Transcarpathia",
         "location": "UA",
         "offset": 120,
         "dstOffset": 180,
@@ -4837,7 +4877,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "europe/zaporozhye": {
         "name": "Europe/Zaporozhye",
-        "description": "Zaporozh'ye/Zaporizhia; Lugansk/Luhansk (east)",
+        "description": "Zaporozhye and east Lugansk",
         "location": "UA",
         "offset": 120,
         "dstOffset": 180,
@@ -4847,10 +4887,20 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "europe/zurich": {
         "name": "Europe/Zurich",
-        "description": "",
+        "description": "Swiss time",
         "location": "CH",
         "offset": 60,
         "dstOffset": 120,
+        "deprecated": false,
+        "canonical": true,
+        "aliasOf": null
+    },
+    "factory": {
+        "name": "Factory",
+        "description": "",
+        "location": null,
+        "offset": 0,
+        "dstOffset": 0,
         "deprecated": false,
         "canonical": true,
         "aliasOf": null
@@ -4895,8 +4945,8 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": false,
         "aliasOf": "Etc/GMT"
     },
-    "gmt0": {
-        "name": "GMT0",
+    "gmt-0": {
+        "name": "GMT-0",
         "description": "",
         "location": null,
         "offset": 0,
@@ -4905,8 +4955,8 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": false,
         "aliasOf": "Etc/GMT"
     },
-    "gmt−0": {
-        "name": "GMT−0",
+    "gmt0": {
+        "name": "GMT0",
         "description": "",
         "location": null,
         "offset": 0,
@@ -5007,7 +5057,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "indian/kerguelen": {
         "name": "Indian/Kerguelen",
-        "description": "",
+        "description": "Kerguelen, St Paul Island, Amsterdam Island",
         "location": "TF",
         "offset": 300,
         "dstOffset": 300,
@@ -5057,7 +5107,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "indian/reunion": {
         "name": "Indian/Reunion",
-        "description": "",
+        "description": "Réunion, Crozet, Scattered Islands",
         "location": "RE",
         "offset": 240,
         "dstOffset": 240,
@@ -5227,7 +5277,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "pacific/auckland": {
         "name": "Pacific/Auckland",
-        "description": "New Zealand (most areas)",
+        "description": "New Zealand time",
         "location": "NZ",
         "offset": 720,
         "dstOffset": 780,
@@ -5327,7 +5377,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "pacific/galapagos": {
         "name": "Pacific/Galapagos",
-        "description": "Galapagos Islands",
+        "description": "Galápagos Islands",
         "location": "EC",
         "offset": -360,
         "dstOffset": -360,
@@ -5381,7 +5431,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -600,
         "dstOffset": -600,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Pacific/Honolulu"
     },
@@ -5470,7 +5520,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "description": "",
         "location": "NF",
         "offset": 660,
-        "dstOffset": 660,
+        "dstOffset": 720,
         "deprecated": false,
         "canonical": true,
         "aliasOf": null
@@ -5487,7 +5537,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
     },
     "pacific/pago_pago": {
         "name": "Pacific/Pago_Pago",
-        "description": "",
+        "description": "Samoa, Midway",
         "location": "AS",
         "offset": -660,
         "dstOffset": -660,
@@ -5531,7 +5581,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 660,
         "dstOffset": 660,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Pacific/Pohnpei"
     },
@@ -5571,7 +5621,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": -660,
         "dstOffset": -660,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Pacific/Pago_Pago"
     },
@@ -5600,7 +5650,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "description": "",
         "location": "TO",
         "offset": 780,
-        "dstOffset": 840,
+        "dstOffset": 780,
         "deprecated": false,
         "canonical": true,
         "aliasOf": null
@@ -5611,7 +5661,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 600,
         "dstOffset": 600,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Pacific/Chuuk"
     },
@@ -5641,7 +5691,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "location": null,
         "offset": 600,
         "dstOffset": 600,
-        "deprecated": false,
+        "deprecated": true,
         "canonical": false,
         "aliasOf": "Pacific/Chuuk"
     },
@@ -5733,7 +5783,7 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "dstOffset": 0,
         "deprecated": true,
         "canonical": false,
-        "aliasOf": "Etc/UCT"
+        "aliasOf": "Etc/UTC"
     },
     "universal": {
         "name": "Universal",
@@ -5785,16 +5835,6 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": false,
         "aliasOf": "America/Chicago"
     },
-    "us/eastern": {
-        "name": "US/Eastern",
-        "description": "",
-        "location": null,
-        "offset": -300,
-        "dstOffset": -240,
-        "deprecated": true,
-        "canonical": false,
-        "aliasOf": "America/New_York"
-    },
     "us/east-indiana": {
         "name": "US/East-Indiana",
         "description": "",
@@ -5804,6 +5844,16 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "deprecated": true,
         "canonical": false,
         "aliasOf": "America/Indiana/Indianapolis"
+    },
+    "us/eastern": {
+        "name": "US/Eastern",
+        "description": "",
+        "location": null,
+        "offset": -300,
+        "dstOffset": -240,
+        "deprecated": true,
+        "canonical": false,
+        "aliasOf": "America/New_York"
     },
     "us/hawaii": {
         "name": "US/Hawaii",
@@ -5855,16 +5905,6 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": false,
         "aliasOf": "America/Los_Angeles"
     },
-    "us/pacific-new": {
-        "name": "US/Pacific-New",
-        "description": "",
-        "location": null,
-        "offset": -480,
-        "dstOffset": -420,
-        "deprecated": true,
-        "canonical": false,
-        "aliasOf": "America/Los_Angeles"
-    },
     "us/samoa": {
         "name": "US/Samoa",
         "description": "",
@@ -5885,16 +5925,6 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "canonical": false,
         "aliasOf": "Etc/UTC"
     },
-    "wet": {
-        "name": "WET",
-        "description": "",
-        "location": null,
-        "offset": 0,
-        "dstOffset": 60,
-        "deprecated": true,
-        "canonical": false,
-        "aliasOf": null
-    },
     "w-su": {
         "name": "W-SU",
         "description": "",
@@ -5904,6 +5934,16 @@ const TIME_ZONES: Record<string, ITimeZone> = {
         "deprecated": true,
         "canonical": false,
         "aliasOf": "Europe/Moscow"
+    },
+    "wet": {
+        "name": "WET",
+        "description": "",
+        "location": null,
+        "offset": 0,
+        "dstOffset": 60,
+        "deprecated": true,
+        "canonical": false,
+        "aliasOf": null
     },
     "zulu": {
         "name": "Zulu",
