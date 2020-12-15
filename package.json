@@ -4,13 +4,20 @@
   "description": "The timezone support library of LiteRT.",
   "main": "lib/index.js",
   "scripts": {
-    "prepare": "npm run rebuild",
-    "build": "echo Using TypeScript && tsc -v && tsc -p .",
-    "build-watch": "echo Using TypeScript && tsc -v && tsc -w -p .",
+    "prepublishOnly": "npm run rebuild",
+    "build": "tsc -v && tsc -p .",
+    "build-watch": "tsc -v && tsc -w -p .",
     "rebuild": "npm run clean && npm run lint && npm run build",
-    "test": "echo See directory src/samples",
-    "clean": "rm -rf lib samples",
-    "lint": "tslint -p . -c tslint.json"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf lib examples test",
+    "lint": "eslint --ext ts src",
+    "test": "echo No tests yet."
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint && npm run typecheck"
+    }
   },
   "repository": {
     "type": "git",
@@ -32,6 +39,13 @@
   "typings": "lib/index.d.ts",
   "types": "lib/index.d.ts",
   "devDependencies": {
-    "typescript": "^3.2.2"
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/node": "^14.14.13",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "^7.15.0",
+    "husky": "^4.3.6",
+    "typescript": "^4.1.3"
   }
 }

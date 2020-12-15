@@ -2,7 +2,8 @@
 
 ## v0.1.2
 
-- Sync the latest data (20201215) from wikipedia.
+- sync(data): Sync the latest data (20201215) from wikipedia.
+- config(lint): Replaced with ESLint.
 
 ## v0.1.1
 
