@@ -1,7 +1,6 @@
 /.vscode/
 /.git/
 /node_modules/
-/tools/
 /.gitignore
 /.npmignore
 /tsconfig.json
@@ -9,3 +8,7 @@
 /docs/
 /examples/
 /utils/
+/.husky/
+/.eslintignore
+/.eslintrc
+/commitlint.config.js
